@@ -1,5 +1,4 @@
 # [Consul Architecture](https://www.consul.io/docs/internals/architecture.html)
-![10,000 foot view](https://www.consul.io/assets/images/consul-arch-420ce04a.png)
 
 ## datacenters
 Consul has first class support for multiple datacenters and expects this to be the common case.
