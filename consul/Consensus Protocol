@@ -1,0 +1,22 @@
+# [Consensus Protocol](https://www.consul.io/docs/internals/consensus.html)
+- ConsulではConsul Server間で情報の一貫性を保つため、Consensus Protocolを使用している
+- Consensus ProtocolはRaft Algorithmがベースになっている
+
+## Raft Protocol Overview
+- クライアントからのリクエストを、クラスタ構成を組んだ複数のサーバで整合性を保ちつつ応答を返すためのアルゴリズム
+- Raftは[Paxos](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29)をベースにしたアルゴリズム
+- [Paxos](https://en.wikipedia.org/wiki/Paxos_%28computer_science%29)に比べて各ノードの持ちうるステータスが少ないため、シンプルでわかりやすいアルゴリズムになっている
+
+### Raftの重要な要素
+#### Log
+- Raftの主要要素
+- ログを各ノード間で複製することで整合性の問題を回避する
+
+#### FSM([Finite State Machine(有限オートマトン)](https://ja.wikipedia.org/wiki/%E6%9C%89%E9%99%90%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3))
+- 
+
+#### Peer set
+- Consulではすべてのサーバノードがローカルデータセンターのピアーセットに属する
+
+#### Quorum
+- サーバノード
