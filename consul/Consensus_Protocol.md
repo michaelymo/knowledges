@@ -51,6 +51,7 @@
 - peer set内でサービスを提供するために必要なサーバノードの数を定義している
 - 何台までなら落ちても大丈夫というやつ
 - 計算式 (peer setを構成しているサーバノードの数)/2+1
+- [サーバノードの数とquorumサイズの対応表](https://www.consul.io/docs/internals/consensus.html#deployment-table)
 
 ### Consistency Modes
 #### default
